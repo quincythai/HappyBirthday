@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) { // convention for Composable take modifier parameter
     Column(
         verticalArrangement = Arrangement.Center,
-        modifier = modifier.padding(8.dp)
+        modifier = modifier
     ) {
         Text(
             text = message,
@@ -69,7 +69,7 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
 @Composable
 fun BirthdayCardPreview() {
     HappyBirthdayTheme {
-        GreetingText(message = "Happy Birthday Sam!", from = "From Quincy")
+        GreetingText(message = "Happy Birthday Sam!", from = "From Gilgamesh")
     }
 }
 
